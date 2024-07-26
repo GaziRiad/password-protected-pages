@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login | Password-protected pages on Netlify</title>
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="../css/login.css" />
   </head>
   <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/pro/">Pro</a>
-    </nav>
-    <main>
+    <main class="container">
       <h1>Login</h1>
-      <p>This is where you gain access to the "/pro/" area.</p>
+      <p>You need to login to get access to the pro area.</p>
       <form action="/.netlify/functions/login" method="POST">
-        <label for="password">Password</label>
+        <label for="password">Please enter your password</label>
         <input type="password" name="password" id="password" />
         <button type="submit">Get access</button>
+
+        <nav>
+          <a href="../index.html" class="back-btn">Go back Home</a>
+        </nav>
       </form>
     </main>
   </body>
