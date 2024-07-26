@@ -3,17 +3,379 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Password-protected pages on Netlify</title>
-    <link rel="stylesheet" href="/styles.css" />
+    <meta
+      name="description"
+      content="View case studies showcasing the UX and UI work of Camille Brunette, an experienced Product Designer based in London, UK."
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.webp"
+    />
+    <link
+      rel="icon"
+      type="image/webp"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.webp"
+    />
+    <link
+      rel="icon"
+      type="image/webp"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.webp"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!--  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="../js/script.js"></script>
+    <title>Camille Brunette Design Portfolio</title>
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-0N1Z22YG9J"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-0N1Z22YG9J");
+  </script>
   <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/pro/">Pro</a>
-    </nav>
+    <header class="header header-white">
+      <a href="#" class="logo"> Camille Brunette </a>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li>
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
     <main>
-      <h1>Home</h1>
-      <p>This is a normal page that everyone can freely access.</p>
+      <section class="hero-section">
+        <div class="hero" data-aos="fade-up" data-aos-duration="1000">
+          <img
+            loading="lazy"
+            class="hero-icon"
+            src="../assets/hero/icon-hero.webp"
+            alt="Camille Brunette hero icon"
+          />
+          <p class="primary-heading">
+            Hey! I'm Camille. I create digital experiences that people love to
+            use.
+          </p>
+          <p class="hero-description">
+            I've worked as a designer for UX, UI and product. If you’d like to
+            embark on a journey, solve problems and inspire people,
+            <a class="text-link" href="./contact.html">get in touch</a>.
+          </p>
+        </div>
+      </section>
+      <!-- COMMON BETWEEN ALL PAGES  -->
+      <section
+        class="projects-section"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <a class="project-box" href="anna-payroll.html">
+          <img
+            loading="lazy"
+            class="project-img"
+            src="../assets/projects/tile-anna-payroll.webp"
+            alt="Product Design example by Camille Brunette, ANNA Money Payroll"
+          />
+          <div class="project-text--box">
+            <p class="project-title">Payroll for ANNA Money</p>
+            <p class="project-text">PRODUCT DESIGN</p>
+          </div>
+        </a>
+        <a class="project-box" href="anna-bookkeeping-score.html">
+          <img
+            loading="lazy"
+            class="project-img"
+            src="../assets/projects/tile-2.webp"
+            alt="Product Design example by Camille Brunette, ANNA Money Bookkeeping Score"
+          />
+          <div class="project-text--box">
+            <p class="project-title">Bookkeeping Score for ANNA Money</p>
+            <p class="project-text">PRODUCT DESIGN</p>
+          </div>
+        </a>
+        <a class="project-box" href="anna-invoicing.html">
+          <img
+            loading="lazy"
+            class="project-img"
+            src="../assets/projects/tile-invoicing.webp"
+            alt="ANNA Money Invoicing"
+          />
+          <div class="project-text--box">
+            <p class="project-title">Invoicing for ANNA Money</p>
+            <p class="project-text">PRODUCT DESIGN</p>
+          </div>
+        </a>
+        <a class="project-box" href="galderma.html">
+          <img
+            loading="lazy"
+            class="project-img"
+            src="../assets/projects/tile-galderma.webp"
+            alt="SEO Microsite UX Design for Galderma"
+          />
+          <div class="project-text--box">
+            <p class="project-title">Galderma SEO Microsite</p>
+            <p class="project-text">UX DESIGN</p>
+          </div>
+        </a>
+        <a class="project-box" href="techspace.html">
+          <img
+            loading="lazy"
+            class="project-img"
+            src="../assets/projects/tile-meeting-room-bookings.webp"
+            alt="UX for Techspace meeting room bookings"
+          />
+          <div class="project-text--box">
+            <p class="project-title">Techspace</p>
+            <p class="project-text">UX/UI DESIGN</p>
+          </div>
+        </a>
+        <a class="project-box" href="xero.html">
+          <img
+            loading="lazy"
+            class="project-img"
+            src="../assets/projects/tile-xero-pricing.webp"
+            alt="UX/UI Design for Xero Pricing Plans"
+          />
+          <div class="project-text--box">
+            <p class="project-title">Xero Pricing Plans</p>
+            <p class="project-text">UX/UI DESIGN</p>
+          </div>
+        </a>
+      </section>
+      <section class="brands-section">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+          <p class="secondary-heading">Brands I’ve worked for</p>
+          <ul class="logos-list">
+            <li>
+              <a href="https://anna.money/" target="_blank">
+                <img
+                  loading="lazy"
+                  src="../assets/brand logos/logo-anna.webp"
+                  alt="brand logo of anna"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.britishland.com/" target="_blank">
+                <img
+                  loading="lazy"
+                  src="../assets/brand logos/logo-british-land.webp"
+                  alt="brand logo of british land"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.fiat.com/" target="_blank">
+                <img
+                  loading="lazy"
+                  src="../assets/brand logos/logo-fiat.webp"
+                  alt="brand logo of fiat"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.marksandspencer.com/" target="_blank">
+                <img
+                  loading="lazy"
+                  src="../assets/brand logos/logo-ms.webp"
+                  alt="brand logo of m and s"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.siemens.com/" target="_blank">
+                <img
+                  loading="lazy"
+                  src="../assets/brand logos/logo-siemens.webp"
+                  alt="brand logo of siemens"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.xero.com/" target="_blank">
+                <img
+                  loading="lazy"
+                  src="../assets/brand logos/logo-xero.webp"
+                  alt="brand logo of xero"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--  -->
+      <section class="agencies-section">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+          <p class="secondary-heading">Agencies I’ve worked for</p>
+          <ul class="logos-list">
+            <li>
+              <a href="https://rga.com/" target="_blank">
+                <img
+                  loading="lazy"
+                  src="../assets/agency logos/agency-rga.webp"
+                  alt="brand logo of rga"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/signal-noise/about/"
+                target="_blank"
+              >
+                <img
+                  loading="lazy"
+                  src="../assets/agency logos/agency-economist.webp"
+                  alt="brand logo of economist signal noise"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://elephant.is/" target="_blank">
+                <img
+                  loading="lazy"
+                  src="../assets/agency logos/agency-elephant.webp"
+                  alt="brand logo of elephant"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.upthereeverywhere.com/" target="_blank">
+                <img
+                  loading="lazy"
+                  src="../assets/agency logos/agency-up.webp"
+                  alt="Brand logo of p"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--  -->
+      <section class="panel-section">
+        <div
+          class="container panel-content"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <img
+            loading="lazy"
+            class="panel-img"
+            src="../assets/page images/device-tantalum@2x.webp"
+            alt="UX design by Camille Brunette"
+          />
+          <div class="panel-box">
+            <p class="panel-title">Camille Brunette</p>
+            <p class="panel-subtitle">UX, UI and Product Designer</p>
+            <div class="panel-buttons">
+              <a
+                class="panel-btn"
+                href="https://www.linkedin.com/in/camille-brunette-34201324"
+                target="_blank"
+              >
+                <span>LinkedIn </span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+              <a
+                class="panel-btn"
+                href="./assets/page images/camille-brunette-cv.pdf"
+                target="_blank"
+              >
+                <span>Résumé </span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <footer class="footer-section">
+        <nav class="footer-nav">
+          <a href="#" class="footer-logo">
+            <img
+              loading="lazy"
+              id="footerImg"
+              src="../assets/footer/logotype-footer.webp"
+              alt="Camille Brunette Footer Logo"
+            />
+          </a>
+          <ul class="footer-nav-list">
+            <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li>
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="copyright-box">
+          <p class="copyright-text">Copyright © 2024 | All Rights Reserved</p>
+          <ul class="social-icons--list">
+            <li>
+              <a
+                href="https://www.facebook.com/camillebrunette"
+                class="social-icon"
+                target="_blank"
+              >
+                <ion-icon name="logo-facebook" size="small"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/camillebrunette/"
+                class="social-icon"
+                target="_blank"
+              >
+                <ion-icon name="logo-instagram" size="small"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/camille-brunette-34201324"
+                class="social-icon"
+                target="_blank"
+              >
+                <ion-icon name="logo-linkedin" size="small"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
