@@ -74,18 +74,18 @@ if (copyEmailBtn) {
 ///////////////////////////////////////////////////////////
 // Hover effect on footer Logo
 
-if (footerLogo) {
-  const currentPath = window.location.pathname;
+// if (footerLogo) {
+//   const currentPath = window.location.pathname;
 
-  const basePath = currentPath.includes("/pro/")
-    ? "../../assets/footer/"
-    : "./assets/footer/";
+//   const basePath = currentPath.includes("/pro/")
+//     ? "../../assets/footer/"
+//     : "./assets/footer/";
 
-  footerLogo.addEventListener("mouseover", function () {
-    footerLogo.src = basePath + "logotype-footer-hover.png";
-  });
+//   footerLogo.addEventListener("mouseover", function () {
+//     footerLogo.src = basePath + "logotype-footer-hover.png";
+//   });
 
-  footerLogo.addEventListener("mouseout", function () {
-    footerLogo.src = basePath + "logotype-footer.png";
-  });
-}
+//   footerLogo.addEventListener("mouseout", function () {
+//     footerLogo.src = basePath + "logotype-footer.png";
+//   });
+// }
